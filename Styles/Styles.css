@@ -26,12 +26,6 @@ a{
     font-weight: 500;
 }
 
-#featuredWork{
-    color:gray;
-    font-size:18px;
-    margin:30px 0 20px 0;
-}
-
 #SubTitle{
     font-size:11px;
 }
@@ -77,14 +71,25 @@ a{
     margin:50px 125px 0px 0px;
 }
 
+#featuredWork{
+    color:gray;
+    font-size:18px;
+    font-weight: 400;
+    margin:30px 0 20px 0;
+}
+
 .featuredIcon{    
-   display: inline-block; vertical-align: middle;
+    display: inline-block; 
+    vertical-align: middle;
+    height:250px;
+    width:250px;
 }
 
 .featuredFigure{
     width:30%;
     box-sizing: border-box;
     height:450px;
+    text-align:center;
 }
 
 .img-container{
@@ -146,10 +151,6 @@ a{
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;*/
-}
-
-.centerFigure{
-    text-align:center;
 }
 
 .featuredLink{
