@@ -1,6 +1,7 @@
 .container {
-	width: 100%;
 	display: flex;
+	justify-content: space-between;
+	padding: 0 30px 0;
 }
 
 .outer {
@@ -40,40 +41,13 @@ a {
 	text-align: right;
 	vertical-align: bottom;
 	font-family: arial, sans-serif;
-	flex: 1;
 	order: 2;
-}
-
-.color {
-	width: 75px;
-	height: 75px;
-}
-
-.lightblue {
-	background: #02b3e4;
-}
-
-.darkblue {
-	background: #2d3c49;
-}
-
-.greyblue {
-	background: #7d97ad;
-}
-
-.sidebar {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	margin: 150px 0 0;
-	order: 1;
-	align-content: center;
 }
 
 .main {
 	flex: 5;
 	order: 2;
-	margin: 50px 125px 0px 0px;
+	margin: 50px 0px 0px 0px;
 }
 
 .featuredWork {
@@ -85,8 +59,8 @@ a {
 
 .featuredIcon {
 	vertical-align: middle;
-	height: 250px;
-	width: 250px;
+	max-width: 100%;
+    height:auto;
 }
 
 .featuredFigure {
@@ -94,7 +68,7 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	width: 30%;
-	min-width: 230px;
+	min-width: 200px;
 	box-sizing: border-box;
 	text-align: center;
 }
@@ -173,8 +147,7 @@ figcaption {
 /*Horizontal list items from*/
 /*https://css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think/*/
 .table {
-	display: table;
-	/* Allow the centering to work */
+	display: table;/* Allow the centering to work */
 	margin: 0 auto;
 }
 
@@ -202,16 +175,17 @@ ul {
 	width: 100%;
 	display: flex;
 	position: relative;
+	padding-left: 0px;
 }
 
 ul li a {
-	width: 80px;
-	height: 80px;
+	width: 70px;
+	height: 70px;
 	background: #fff;
 	text-align: center;
-	line-height: 80px;
+	line-height: 70px;
 	font-size: 35px;
-	margin: 0 10px;
+	margin: 0 6px;
 	display: block;
 	border-radius: 50%;
 	position: relative;
