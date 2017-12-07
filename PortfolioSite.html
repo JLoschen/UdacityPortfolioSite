@@ -5,92 +5,98 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<title>Portfolio Site</title>
 	<link href="Styles/Styles.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="outer">
-	<div id="main">
-		<div class="container">
-			<img alt="initials J L" height="80" src="image/JL_logo.PNG" width="120">
-			<header class="nav">
-				<h1 id="Name">JOSH LOSCHEN</h1>
-				<div>
-					<p id="SubTitle">SOFTWARE NINJANEER</p>
-				</div>
-			</header>
-		</div>
-		<hr>
-		<!--I got the below image from a youtube tutorial, I hope this counts as attribution-->
-		<div class="img-container">
-			<div class="inner-container">
-				<h1>HERO IMAGE FROM YOUTUBE</h1>
-				<h2>I hope the link counts as attribution</h2><a class="btn" href="https://www.youtube.com/watch?v=tb_EwQOa_ao">View Tutorial</a>
+	<div class="outer">
+		<div class="main">
+			<div class="container">
+				<img alt="initials J L" height="80" src="image/JL_logo.PNG" width="120">
+				<header class="nav">
+					<h1 class="name">JOSH LOSCHEN</h1>
+					<div>
+						<p class="subtitle">SOFTWARE NINJANEER</p>
+					</div>
+				</header>
 			</div>
+			<hr>
+			<!--I got the below image from a youtube tutorial, I hope this counts as attribution-->
+			<div class="img-container">
+				<div class="inner-container">
+					<h1>HERO IMAGE FROM YOUTUBE</h1>
+					<h2>I hope the link counts as attribution</h2><a class="btn" href="https://www.youtube.com/watch?v=tb_EwQOa_ao">View Tutorial</a>
+				</div>
+			</div>
+			<div>
+				<h3 class="featuredWork">FEATURED WORK</h3>
+			</div>
+			<section class="sampleCode">
+				<article class="featuredFigure">
+					<figure>
+						<img alt="Super Duper Jumper Android" class="featuredIcon" src="image/SuperDuperJumper2.PNG">
+						<figcaption>
+							SUPER DUPER JUMPER
+						</figcaption>
+					</figure><a class="featuredLink" href="https://play.google.com/store/apps/details?id=com.joshloschen.androidapps.jumper&hl=en" target="_blank">https://play.google.com/store/apps/details?id=com.joshloschen.androidapps.jumper&hl=en</a>
+				</article>
+				<article class="featuredFigure">
+					<figure>
+						<img alt="WPF logo" class="featuredIcon" src="image/WPF_logo.png">
+						<figcaption>
+							FLYOUT WPF CONTROL
+						</figcaption>
+					</figure><a class="featuredLink" href="https://bitbucket.org/IBeCrazy06/flyout/commits/all" target="_blank">https://bitbucket.org/IBeCrazy06/flyout/commits/all</a>
+				</article>
+				<article class="featuredFigure">
+					<figure>
+						<img alt="battleship logo" class="featuredIcon" src="image/battleship.png">
+						<figcaption>
+							BATTLESHIP AI
+						</figcaption>
+					</figure><a class="featuredLink" href="https://bitbucket.org/IBeCrazy06/c-battleship/commits/all" target="_blank">https://bitbucket.org/IBeCrazy06/c-battleship/commits/all</a>
+				</article>
+			</section>
 		</div>
-		<div >
-			<h3 id="featuredWork">FEATURED WORK</h3>
-		</div>
-		<section class="sampleCode">
-			<article class="featuredFigure">
-				<figure>
-					<img alt="Super Duper Jumper Android" class="featuredIcon"src="image/SuperDuperJumper2.PNG">
-					<figcaption>
-						SUPER DUPER JUMPER
-					</figcaption>
-				</figure><a class="featuredLink" target="_blank" href="https://play.google.com/store/apps/details?id=com.joshloschen.androidapps.jumper&hl=en">https://play.google.com/store/apps/details?id=com.joshloschen.androidapps.jumper&hl=en</a>
-            </article>
-            <article class="featuredFigure">
-				<figure>
-					<img alt="WPF logo" class="featuredIcon" src="image/WPF_logo.png">
-					<figcaption>
-						FLYOUT WPF CONTROL
-					</figcaption>
-				</figure><a class="featuredLink" target="_blank" href="https://bitbucket.org/IBeCrazy06/flyout/commits/all">https://bitbucket.org/IBeCrazy06/flyout/commits/all</a>
-            </article>
-            <article class="featuredFigure">
-				<figure>
-					<img alt="battleship logo" class="featuredIcon"src="image/battleship.png" >
-					<figcaption>
-						BATTLESHIP AI
-					</figcaption>
-				</figure><a class="featuredLink" href="https://bitbucket.org/IBeCrazy06/c-battleship/commits/all" target="_blank">https://bitbucket.org/IBeCrazy06/c-battleship/commits/all</a>
-            </article>
-		</section>
-    </div>
-	<aside id="sidebar">
-		<div id="colors">
+		<aside class="sidebar">
 			<figure>
-				<div class="lightblue"></div>
+				<div class="color lightblue"></div>
 				<figcaption>
 					#02b3e4
 				</figcaption>
 			</figure>
 			<figure>
-				<div class="darkblue"></div>
+				<div class="color darkblue"></div>
 				<figcaption>
 					#2d3c49
 				</figcaption>
 			</figure>
 			<figure>
-				<div class="greyblue"></div>
+				<div class="color greyblue"></div>
 				<figcaption>
 					#7d97ad
 				</figcaption>
 			</figure>
+		</aside>
+	</div>
+	<footer>
+		<div class="footerWrapper">
+			<div class="table">
+				<ul id="horizontal-list">
+					<li>
+						<a href="#"><i aria-hidden="true" class="fa fa-google-plus"></i></a>
+					</li>
+					<li>
+						<a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+					</li>
+					<li>
+						<a href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+					</li>
+					<li>
+						<a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</aside>
-        </div>
-    <footer>
-        <div class="footerWrapper">
-            <div class="table">
-                <ul id="horizontal-list">
-                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+	</footer>
 </body>
 </html>

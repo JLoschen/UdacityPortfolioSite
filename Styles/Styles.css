@@ -1,279 +1,265 @@
-
 .container {
-    width:100%;
-    display:flex;
+	width: 100%;
+	display: flex;
 }
 
-.outer{
-    display:flex;
-    font-family: arial,sans-serif;
-    width: 100%;
-}
-/*body{
-    display:flex;
-    font-family: arial,sans-serif;
-    width: 100%;
-}*/
-
-body{
-    margin:0;
+.outer {
+	display: flex;
+	font-family: arial, sans-serif;
+	width: 100%;
 }
 
-figcaption{
-    text-align: center;
-    font-family:arial,sans-serif;
-    margin:0;
-    font-size:19px;
+body {
+	margin: 0;
 }
 
-a{
-    word-wrap: break-word;
+figcaption {
+	text-align: center;
+	font-family: arial, sans-serif;
+	margin: 0;
+	font-size: 19px;
 }
 
-#Name {
-    font-size:27px;
-    font-weight: 500;
+a {
+	word-wrap: break-word;
 }
 
-#SubTitle{
-    font-size:11px;
+.name {
+	font-size: 29px;
+	font-weight: 500;
+	margin: 0;
 }
 
-.nav{
-    text-align: right;
-    vertical-align: bottom;
-    line-height: 30px; 
-    font-family:arial,sans-serif;
-    flex:1;
-    order:2;
-    display:block;
+.subtitle {
+	font-size: 12px;
 }
 
-.lightblue{
-    width:75px;
-    height:75px;
-    background: #02b3e4;
+.nav {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	vertical-align: bottom;
+	font-family: arial, sans-serif;
+	flex: 1;
+	order: 2;
 }
 
-.darkblue{
-    width:75px;
-    height:75px;
-    background: #2d3c49;
+.color {
+	width: 75px;
+	height: 75px;
 }
 
-.greyblue{
-    width:75px;
-    height:75px;
-    background: #7d97ad;
+.lightblue {
+	background: #02b3e4;
 }
 
-#sidebar{
-    margin:150px 0 0 0;
-    flex:0 0 10em;
-    order:1;
-    align-content: center;
+.darkblue {
+	background: #2d3c49;
 }
 
-#main{
-    flex:5;
-    order:2;
-    margin:50px 125px 0px 0px;
+.greyblue {
+	background: #7d97ad;
 }
 
-#featuredWork{
-    color:gray;
-    font-size:18px;
-    font-weight: 400;
-    margin:30px 0 20px 0;
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin: 150px 0 0;
+	order: 1;
+	align-content: center;
 }
 
-.featuredIcon{    
-    display: inline-block; 
-    vertical-align: middle;
-    height:250px;
-    width:250px;
+.main {
+	flex: 5;
+	order: 2;
+	margin: 50px 125px 0px 0px;
 }
 
-.featuredFigure{
-    width:30%;
-    box-sizing: border-box;
-    height:450px;
-    text-align:center;
+.featuredWork {
+	color: gray;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 30px 0 20px 0;
 }
 
-.img-container{
-    background-image: url(../image/image.jpg);
-    height:600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+.featuredIcon {
+	vertical-align: middle;
+	height: 250px;
+	width: 250px;
 }
 
-.inner-container{
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    color: white;
-    height:auto;
-    margin-top: 200px;
+.featuredFigure {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 30%;
+	min-width: 230px;
+	box-sizing: border-box;
+	text-align: center;
 }
 
-.sampleCode{
-    width:100%;
-    justify-content: space-between;
-    display:flex;
+.img-container {
+	background-image: url(../image/image.jpg);
+	height: 600px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
 
-/*I couldn't get flex-wrap:wrap to work so I just moved the sample projects with media queries*/
-@media screen and (min-width: 1101px){
-    .sampleCode{display:flex;}
+.inner-container {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	color: white;
+	height: auto;
+	margin-top: 200px;
 }
 
-@media screen and (max-width: 1100px){
-    .sampleCode{display:block;}
+figure {
+	display: flex;
+	flex-direction: column;
 }
 
-.btn{
-    display: inline-block;
-    width: 200px;
-    font-weight: bold;
-    padding: 10px;
-    color: #fff;
-    border: 4px solid #fff;
-    text-align: center;
-    outline: none;
-    text-decoration: none;
-    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+figure img {
+	align-self: center;
 }
 
-.btn:hover,.btn:active{
-    background-color: #fff;
-    color: #000;
-    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+.sampleCode {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-/*commented out chrome margins to pass css validator, looks better with no margin*/
-.sampleCode  figure{
-    box-sizing: border-box;
-    /*-webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;*/
+.btn {
+	display: inline-block;
+	width: 200px;
+	font-weight: bold;
+	padding: 10px;
+	color: #fff;
+	border: 4px solid #fff;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+	transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
 
-.featuredLink{
-    margin:100px 0 0 0;
-    font-size:11px;
+.btn:hover, .btn:active {
+	background-color: #fff;
+	color: #000;
+	transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
-figcaption{
-    margin: 10px 0 10px 0;
-    width:100%;
+.sampleCode figure {
+	display: flex;
+	box-sizing: border-box;
+	align-items: flex-start;
 }
 
-
-/*Social Links Styling below*/
-
-.footerWrapper{
-    display:block;
-    align-content: center;
-    background: black;
+.featuredLink {
+	font-size: 11px;
+	margin: 0 0 30px 0;
 }
 
-/*position:absolute;*/
-ul{
-/*    background:blue;*/
-/*
-    order:7;
-    flex: 9;
-*/
-    width:100%;
-    display:flex;
-    position:relative;  
-/*
-    top:50%;
-    left:70%;
-*/
-    
-/*    transform: translate(-50%, -50%);*/
+figcaption {
+	margin-top: 10px;
+	width: 100%;
 }
-/*-50%*/
 
 /*Horizontal list items from*/
 /*https://css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think/*/
 .table {
-	display: table;   /* Allow the centering to work */
+	display: table;
+	/* Allow the centering to work */
 	margin: 0 auto;
 }
+
 ul#horizontal-list {
-/*	min-width: 696px;*/
 	list-style: none;
-/*	padding-top: 20px;*/
 }
 
 ul#horizontal-list li {
-    display: inline;
+	display: inline;
 }
 
-ul li{
-    list-style: none;
+ul li {
+	list-style: none;
 }
 
-ul li a{
-    width:80px;
-    height: 80px;
-    background: #fff;
-    text-align: center;
-    line-height: 80px;
-    font-size: 35px;
-    margin: 0 10px;
-    display:block;
-    border-radius:50%;
-    position:relative;
-    overflow:hidden;
-    border: 3px solid #fff;
-    z-index: 1;
+/*Social Links Styling below*/
+/*https://www.youtube.com/watch?v=QaSLBMqPb2U*/
+.footerWrapper {
+	display: block;
+	align-content: center;
+	background: black;
 }
 
-ul li a .fa{
-    position:relative;
-    color:#262626;
-    transition: .5s;
-    z-index:3;
+ul {
+	width: 100%;
+	display: flex;
+	position: relative;
 }
 
-ul li a:hover .fa{
-    color: #fff;
-    transform:rotateY(360deg);
+ul li a {
+	width: 80px;
+	height: 80px;
+	background: #fff;
+	text-align: center;
+	line-height: 80px;
+	font-size: 35px;
+	margin: 0 10px;
+	display: block;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	border: 3px solid #fff;
+	z-index: 1;
 }
 
-ul li a:before{
-    content: '';
-    position: absolute;
-    top:100%;
-    left:0;
-    width:100%;
-    height:100%;
-    background:#f00;
-    transition: .5s;
-    z-index:2;
+ul li a .fa {
+	position: relative;
+	color: #262626;
+	transition: .5s;
+	z-index: 3;
 }
 
-ul li a:hover:before{
-    top:0;   
+ul li a:hover .fa {
+	color: #fff;
+	transform: rotateY(360deg);
 }
 
-ul li:nth-child(1) a:before{
-    background: #dd4b39;
+ul li a:before {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #f00;
+	transition: .5s;
+	z-index: 2;
 }
 
-ul li:nth-child(2) a:before{
-    background: #3b5998;
+ul li a:hover:before {
+	top: 0;
 }
-ul li:nth-child(3) a:before{
-    background: #00aced;
+
+ul li:nth-child(1) a:before {
+	background: #dd4b39;
 }
-ul li:nth-child(4) a:before{
-    background: #007bb6;
+
+ul li:nth-child(2) a:before {
+	background: #3b5998;
+}
+
+ul li:nth-child(3) a:before {
+	background: #00aced;
+}
+
+ul li:nth-child(4) a:before {
+	background: #007bb6;
 }
