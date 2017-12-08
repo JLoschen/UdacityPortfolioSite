@@ -44,26 +44,26 @@ a {
 	order: 2;
 }
 
-.main {
+main {
 	flex: 5;
 	order: 2;
 	margin: 50px 0px 0px 0px;
 }
 
-.featuredWork {
+.featured-work {
 	color: gray;
 	font-size: 18px;
 	font-weight: 400;
-	margin: 30px 0 20px 0;
+	margin: 20px 10px 0px 10px;
 }
 
-.featuredIcon {
+.featured-icon {
 	vertical-align: middle;
 	max-width: 100%;
     height:auto;
 }
 
-.featuredFigure {
+.featured-figure {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -134,7 +134,7 @@ figure img {
 	align-items: flex-start;
 }
 
-.featuredLink {
+.featured-link {
 	font-size: 11px;
 	margin: 0 0 30px 0;
 }
